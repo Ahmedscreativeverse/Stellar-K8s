@@ -57,6 +57,7 @@ pub mod gas_autoscaling;
 pub mod horizon_scaler;
 pub mod jurisdiction;
 pub mod label_propagation;
+pub mod leader;
 pub mod maintenance;
 pub mod network_isolation;
 pub mod predictive_scaling;
