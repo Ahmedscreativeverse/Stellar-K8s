@@ -108,6 +108,7 @@ pub mod pruning_reconciler;
 pub mod pruning_worker;
 pub mod quorum;
 pub mod read_pool;
+pub mod rollout;
 pub(crate) mod reconciler;
 #[cfg(test)]
 mod reconciler_test;
@@ -183,6 +184,9 @@ pub use pss::{
 pub use reconciler::reconcile_for_fuzz;
 pub use reconciler::{run_controller, BatchSummaryReport, ControllerState};
 pub use remediation::{can_remediate, check_stale_node, RemediationLevel, StaleCheckResult};
+pub use rollout::{
+    HorizonRolloutGate, RolloutHealthChecker, RolloutHealthConfig, ROLLOUT_GATE_ANNOTATION,
+};
 pub use service_mesh::{
     delete_service_mesh_resources, ensure_destination_rule, ensure_peer_authentication,
     ensure_request_authentication, ensure_virtual_service,
