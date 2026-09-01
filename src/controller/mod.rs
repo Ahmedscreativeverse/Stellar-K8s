@@ -73,6 +73,7 @@ pub mod audit_sink;
 pub mod audit_worker;
 pub mod background_jobs;
 pub mod captive_core;
+pub mod captive;
 pub mod chaos_engineering;
 pub mod conditions;
 pub mod cost;
