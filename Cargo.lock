@@ -5741,6 +5741,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "snapshot-assert"
+version = "0.1.0"
+dependencies = [
+ "soroban-sdk",
+]
+
+[[package]]
 name = "socket2"
 version = "0.5.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
